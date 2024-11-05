@@ -1,4 +1,4 @@
-package Mydiary;
+package model;
 
 /**
  * Hello world!
