@@ -1,0 +1,4 @@
+package service;
+public enum Emocion {
+    ALEGRIA, TRISTEZA, IRA, ASCO, MIEDO, ANSIEDAD, ENVIDIA, VERGUENZA, ABURRIMIENTO, NOSTALGIA
+}
