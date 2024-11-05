@@ -22,7 +22,7 @@ public class Momento<Emocion> {
         this.fechaModificacion = this.fechaCreacion;
     }
 
-    // Getters y setters
+    
     public int getId() { return id; }
     public Emocion getEmocion() { return emocion; }
     public LocalDate getFechaMomento() { return fechaMomento; }
