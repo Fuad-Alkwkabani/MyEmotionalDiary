@@ -1,4 +1,4 @@
-package proj_inside_out;
+package model;
 
 /**
  * Hello world!
