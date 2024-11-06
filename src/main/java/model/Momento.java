@@ -1,9 +1,10 @@
 package model;
 
+import service.Emocion;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class Momento<Emocion> {
+public class Momento {
     private int id;
     private String titulo;
     private String descripcion;
@@ -22,7 +23,6 @@ public class Momento<Emocion> {
         this.fechaModificacion = this.fechaCreacion;
     }
 
-    
     public int getId() { return id; }
     public Emocion getEmocion() { return emocion; }
     public LocalDate getFechaMomento() { return fechaMomento; }
