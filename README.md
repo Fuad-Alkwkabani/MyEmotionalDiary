@@ -25,6 +25,7 @@
 </ol>
 
 # Estructura del Proyecto
+<pre>
 
 mi-diario
 ├── src
@@ -43,6 +44,7 @@ mi-diario
 │   │   │   └── ui
 │   │   │       └── ConsolaUITest.java
 └── README.md
+</pre>
 
 
 
