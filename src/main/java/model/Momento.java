@@ -24,6 +24,7 @@ public class Momento {
     }
 
     public int getId() { return id; }
+    public String getTitulo() {return titulo;}
     public Emocion getEmocion() { return emocion; }
     public LocalDate getFechaMomento() { return fechaMomento; }
     public String toString() {
