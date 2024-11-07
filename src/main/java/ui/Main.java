@@ -1,5 +1,5 @@
-package service;
-import ui.ConsolaUI;
+package ui;
+import service.DiarioService;
 
 public class Main {
     public static void main(String[] args) {
