@@ -2,23 +2,27 @@
 # Descripción
 "Mi Diario" es una aplicación de consola desarrollada en Java que permite a los usuarios registrar, organizar y visualizar momentos vividos con una emoción asociada. Los usuarios pueden agregar, listar, eliminar y filtrar momentos por emoción o fecha, todo en un entorno simple de línea de comandos. El proyecto sigue los principios de buenas prácticas de programación, incluidas pruebas unitarias con una cobertura mínima del 70% y una estructura de código limpia y modular.
 # Funcionalidades
-. Añadir momento: Permite al usuario ingresar un momento con detalles como título, descripción, fecha y emoción.
-. Listar momentos: Muestra todos los momentos registrados.
-. Eliminar momento: Permite al usuario eliminar un momento usando su identificador.
-. Filtrar momentos: Filtra momentos por emoción o por fecha para una visualización más organizada.
-. Salir: Finaliza la aplicación.
+<ul>
+    <li><strong>Añadir momento</strong>: Permite al usuario ingresar un momento con detalles como título, descripción, fecha y emoción.</li>
+    <li><strong>Listar momentos</strong>: Muestra todos los momentos registrados.</li>
+    <li><strong>Eliminar momento</strong>: Permite al usuario eliminar un momento usando su identificador.</li>
+    <li><strong>Filtrar momentos</strong>: Filtra momentos por emoción o por fecha para una visualización más organizada.</li>
+    <li><strong>Salir</strong>: Finaliza la aplicación.</li>
+</ul>
 
 # Emociones Disponibles
-1 .Alegría
-2 .Tristeza
-3 .Ira
-4 .Asco
-5 .Miedo
-6 .Ansiedad
-7 .Envidia
-8 .Vergüenza
-9 .Aburrimiento
-10.Nostalgia
+<ol>
+    <li>Alegría</li>
+    <li>Tristeza</li>
+    <li>Ira</li>
+    <li>Asco</li>
+    <li>Miedo</li>
+    <li>Ansiedad</li>
+    <li>Envidia</li>
+    <li>Vergüenza</li>
+    <li>Aburrimiento</li>
+    <li>Nostalgia</li>
+</ol>
 
 # Estructura del Proyecto
 
@@ -43,9 +47,11 @@ mi-diario
 
 
 # Requisitos
-. Java 11 o superior
-. Maven (opcional, para ejecutar pruebas y manejar dependencias)
-. Visual Studio Code con el soporte para Java configurado
+<ul>
+    <li>Java 11 o superior</li>
+    <li>Maven (opcional, para ejecutar pruebas y manejar dependencias)</li>
+    <li>Visual Studio Code con el soporte para Java configurado</li>
+</ul>
 
 # Instalación y Ejecución
 1. Clonar el repositorio:
@@ -95,9 +101,16 @@ Ingrese su opción: 1
 Momento vivido añadido correctamente.
 
 # Contribución
-1. Realiza un fork del repositorio.
-2. Crea una nueva rama con la funcionalidad:
-3. git checkout -b feature/tu-funcionalidad.
-4. Realiza los cambios y haz un commit: git commit -m "Añadir nueva funcionalidad".
-5. Sube tus cambios: git push origin feature/tu-funcionalidad.
-6. Crea un Pull Request para revisión.
+<ol>
+    <li>Realiza un fork del repositorio.</li>
+    <li>Crea una nueva rama con la funcionalidad:
+        <pre><code>git checkout -b feature/tu-funcionalidad</code></pre>
+    </li>
+    <li>Realiza los cambios y haz un commit:
+        <pre><code>git commit -m "Añadir nueva funcionalidad"</code></pre>
+    </li>
+    <li>Sube tus cambios:
+        <pre><code>git push origin feature/tu-funcionalidad</code></pre>
+    </li>
+    <li>Crea un Pull Request para revisión.</li>
+</ol>
