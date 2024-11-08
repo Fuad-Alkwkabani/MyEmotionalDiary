@@ -24,6 +24,11 @@
     <li>Nostalgia</li>
 </ol>
 
+<h2>Diagramas Realizados</h2>
+
+<img src="/foto/Captura desde 2024-11-07 15-35-39.png" alt="Diagrama de flujo" />
+
+
 # Estructura del Proyecto
 <pre>
 
@@ -102,6 +107,19 @@ Seleccione una emoción:
 Ingrese su opción: 1
 Momento vivido añadido correctamente.
 
+<h2>Ejecución de los Tests</h2>
+<ol>
+    <li>Ejecuta los tests usando Maven:
+        <pre><code>mvn test</code></pre>
+    </li>
+    <li>Para verificar la cobertura, genera un informe:
+        <pre><code>mvn jacoco:report</code></pre>
+    </li>
+    <li>La cobertura de los tests se puede consultar en <code>target/site/jacoco/index.html</code>.</li>
+</ol>
+<p>Ejemplo de captura de cobertura:</p>
+<img src="/foto/Captura desde 2024-11-07 15-35-39.png" alt="Captura de cobertura de pruebas" />
+
 # Contribución
 <ol>
     <li>Realiza un fork del repositorio.</li>
@@ -116,3 +134,10 @@ Momento vivido añadido correctamente.
     </li>
     <li>Crea un Pull Request para revisión.</li>
 </ol>
+
+<h2>Autores</h2>
+<ul>
+    <li>FUAD AL KWKABANI  <a href="https://github.com/Fuad-Alkwkabani">GitHub</a></li>
+    <li>Clara Vilera <a href="https://github.com/Claravilera">GitHub</a></li>
+    <li> KARELIZ DIAZ  <a href="https://github.com/KARELIZ01">GitHub</a></li>
+</ul>
