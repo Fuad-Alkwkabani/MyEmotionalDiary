@@ -118,7 +118,7 @@ Momento vivido añadido correctamente.
     <li>La cobertura de los tests se puede consultar en <code>target/site/jacoco/index.html</code>.</li>
 </ol>
 <p>Ejemplo de captura de cobertura:</p>
-<img src="/foto/Captura desde 2024-11-07 15-35-39.png" alt="Captura de cobertura de pruebas" />
+<img src="/foto/Captura desde 2024-11-08 10-43-42.png" alt="Captura de cobertura de pruebas" />
 
 # Contribución
 <ol>
