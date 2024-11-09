@@ -3,15 +3,16 @@ package ui;
 import service.DiarioService;
 import service.Emocion;
 import model.Momento;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class ConsolaUI {
     private DiarioService diarioService;
     private Scanner scanner = new Scanner(System.in);
+
     public ConsolaUI(DiarioService diarioService) {
         this.diarioService = diarioService;
     }
@@ -28,6 +29,7 @@ public class ConsolaUI {
             System.out.print("Seleccione una opción: ");
             int opcion = scanner.nextInt();
             scanner.nextLine();
+
             switch (opcion) {
                 case 1 -> agregarMomento();
                 case 2 -> listarMomentos();
@@ -41,6 +43,7 @@ public class ConsolaUI {
             }
         }
     }
+
     private void agregarMomento() {
         System.out.print("Ingrese el título: ");
         String titulo = scanner.nextLine();
@@ -48,15 +51,18 @@ public class ConsolaUI {
         String descripcion = scanner.nextLine();
         System.out.print("Ingrese la fecha (dd/MM/yyyy): ");
         LocalDate fechaMomento = LocalDate.parse(scanner.nextLine(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+
         System.out.println("Selecciona una emoción:");
         for (Emocion emocion : Emocion.values()) {
             System.out.println((emocion.ordinal() + 1) + ". " + emocion);
         }
         int emocionId = scanner.nextInt();
         scanner.nextLine();
+
         Emocion emocion = Emocion.values()[emocionId - 1];
         diarioService.agregarMomento(titulo, descripcion, emocion, fechaMomento);
     }
+
     private void listarMomentos() {
         List<Momento> momentos = diarioService.listarMomentos();
         if (momentos.isEmpty()) {
@@ -67,6 +73,7 @@ public class ConsolaUI {
             }
         }
     }
+
     private void eliminarMomento() {
         System.out.print("Ingresa el identificador del momento: ");
         int id = scanner.nextInt();
@@ -76,12 +83,14 @@ public class ConsolaUI {
             System.out.println("No se encontró un momento con el ID proporcionado.");
         }
     }
+
     private void filtrarMomentos() {
         System.out.println("Filtrar por ...");
         System.out.println("1. Emoción");
         System.out.println("2. Fecha");
         int opcion = scanner.nextInt();
         scanner.nextLine();
+
         if (opcion == 1) {
             System.out.println("Selecciona una emoción:");
             for (Emocion emocion : Emocion.values()) {
@@ -97,6 +106,7 @@ public class ConsolaUI {
             mostrarMomentos(diarioService.filtrarPorMes(Integer.parseInt(fecha[0]), Integer.parseInt(fecha[1])));
         }
     }
+
     private void mostrarMomentos(List<Momento> momentos) {
         if (momentos.isEmpty()) {
             System.out.println("No se encontraron momentos.");
